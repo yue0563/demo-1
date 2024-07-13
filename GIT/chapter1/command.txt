@@ -1,0 +1,39 @@
+git version
+git config  --global user.name your-name
+git config  --global user.email your-email
+C:\Users\Jerry\.gitconfig
+git config --list
+git init
+git config  user.name your-name
+git config  user.email your-email
+
+git add
+git status
+git cat-file -t sha-1
+git cat-file -t sha-1
+
+git ls-files
+git ls-files -s
+
+
+tree -F .get > tree.txt
+echo "test" > test1.txt
+touch filename
+git ls-files
+git ls-files -s
+
+git commit -m "first commit"
+git rm --cached file1.txt
+
+git restore --staged demo1.txt
+
+git log
+
+git log --oneline
+git shortlog
+
+git checkout sha1
+git checkout branch
+git checkout -b branch
+
+git reflog

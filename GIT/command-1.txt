@@ -1,0 +1,89 @@
+1. 版本號
+- git --version
+
+2. 寫入使用者資訊
+- git config --global user.name XXX
+- git config --global user.email XXX@XXX.com
+
+
+3. 檢視設定資訊
+- git config --list
+
+
+4. 將目錄新增版本控管
+- git init (.git)
+
+5. 檔案狀態
+- U (Untrack) 未被控管
+
+6. 控管狀態
+- git status
+
+7. 加入控管
+- git add <filename>
+	- U>A (added)已加入
+
+8. 看編碼object內容
+- git cat-file - p (內容)  sha-1 xxxxxx(前六碼 目錄+檔案名稱)
+	       - t (型態)  sha-1 xxxxxx
+
+	
+
+### 查看暫存區控管的檔案
+- git ls-files 
+- git ls-files -s 
+	- 查看完整資訊
+
+### 修改後 A==>M (M==>D)
+- git add <filename>
+	- 確定修改(刪除)
+- git restore <filename>
+ 	- 反悔修改
+
+### 儲存至倉庫區
+- git commit -am "memo"
+
+
+
+### 檢視commit的紀錄
+- git log
+- git log --oneline(一行輸出)
+
+
+### 修改上一次的commit紀錄
+- git commit --amend
+	- 開啟vim (i:insert  esc==> :wq)
+
+
+### 手動刪除(暫存區/倉庫區)
+- git restore <filename> 
+	- 恢復
+- git add <filename>
+	- 確認
+	- git restore --staged <filename>
+		- 恢復到手動刪除狀態
+
+### 倉庫區的刪除
+- 手動同上
+- git rm
+	- git commit 確認刪除
+	- git restore --staged <filename>
+		- 恢復到刪除狀態
+			- git restore <filename> 
+				- 恢復
+			- git add <filename>
+				- 確認
+
+
+### 暫存/倉庫移除到工作區 
+- git rm --cached <filename>
+
+
+### 檢視目前分支
+- git branch
+- 產生新分支
+	- git branch <branch-name> 
+- 切換分支
+	- git checkout <branch-name>
+
+
