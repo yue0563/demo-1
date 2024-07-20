@@ -27,7 +27,23 @@
 - git cat-file - p (內容)  sha-1 xxxxxx(前六碼 目錄+檔案名稱)
 	       - t (型態)  sha-1 xxxxxx
 
+22. 回到過去的commit
+	- git rest commit-object
+	- git rest --hard commit-object
+
+23. 顯示所有的歷程
+	- git reflog
+
+24. 修改後恢復
+1. git checkout .
+2. git rest --hard HEAD
+3. git rest --hard HEAD~2
+4. git rest --hard commit
+
 	
+
+
+git remote add origin https://github.com/yue0563/demo-1.git
 
 ### 查看暫存區控管的檔案
 - git ls-files 

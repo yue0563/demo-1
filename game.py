@@ -17,3 +17,5 @@ if x != y:
     print(f"答案為:{x}")
 else:
     print(f"共計猜{i+1}次")
+
+print("sssdfe")
