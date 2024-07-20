@@ -74,7 +74,14 @@
 	- git push --delete origin dev
 
 
-- 使
+29. 新增README.md 跟 .gitignore
+	- README.md 使用 markdown語法
+
+	- .gitignore
+		- 忽略不被控管的檔案
+			- 1.jpg
+			- *.jpg  	(所有包含.jpg的檔案)
+			-res/		(目錄)
 
 	
 
