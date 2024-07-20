@@ -83,6 +83,12 @@
 			- *.jpg  	(所有包含.jpg的檔案)
 			-res/		(目錄)
 
+30. 跟遠端相關指令
+	- git clone
+	- git pull
+
+	
+
 	
 
 
