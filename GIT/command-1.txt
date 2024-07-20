@@ -27,7 +27,7 @@
 - git cat-file - p (內容)  sha-1 xxxxxx(前六碼 目錄+檔案名稱)
 	       - t (型態)  sha-1 xxxxxx
 
-22. 回到過去的commit
+22. 回到過去的commitgit
 	- git rest commit-object
 	- git rest --hard commit-object
 
@@ -39,6 +39,42 @@
 2. git rest --hard HEAD
 3. git rest --hard HEAD~2
 4. git rest --hard commit
+
+25. 反悔rest
+- git rest --hard ORIG_HEAD
+
+26. 檢視雲端的倉庫url
+- git remote -v
+- git remote add origin https://github.com/yue0563/demo-1.git
+
+27. git push 
+	- 本地端推送遠端倉庫
+	- 第一次遠端需要產生分支
+		- git push origin -u master
+	- 第二次後可直接push
+		- git push		=>(master=>master)
+
+28. git演練
+- 產生分支
+	- git branch dev
+	- git 
+- 產生跟切換
+	- git checkout -b dev
+
+
+- 切換分支到master
+	- git checkout master
+- 將dev分支合併到master
+	- git merge dev
+- 更新到雲端master分支
+	- git push
+- 刪除本地dev分支
+	- git branch -D dev
+- 刪除遠端的分支
+	- git push --delete origin dev
+
+
+- 使
 
 	
 
